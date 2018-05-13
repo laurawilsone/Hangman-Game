@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Texas Hangman</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
    
 
@@ -12,28 +12,37 @@
 
 <body>
 
-<div class="centerbox">
+    <div class="centerbox">
     <h1>Texas Hangman</h1>
-    <p>Press any key to start!</p>
-    
+    <p>Press any letter to get started!</p>
 
 </div>
 
-<div class="game">
-    <p id="word">Word</p>
-    
-    <p id="wins">Wins</p>
-
-    <p id="losses">Losses</p>
-    
-    <p id="Lives">Lives</p>
-
-    <p id="letters already guesses">Letters Already Guessed</p>
-    
-</div>
 <div class="lowerbox">
+    <div id="game-section">  
+        <div>
+          <h3 class="section-title">Wins</h3>
+          <div id="wins"></div>
+        </div>
+        <br>
+        <div id="current-word-section">
+          <h3 class="section-title">Current Word</h3>
+          <div id="current-word"></div>
+        </div>
+        <br>
+        <div id="guesses-remaining-section">
+          <h3 class="section-title">Number of Guesses</h3>
+          <div id="guesses-remaining"></div>
+        </div>
+        <br>
+        <div id="guessed-letters-section">
+          <h3 class="section-title">Letters Guessed</h3>
+          <div id="guessed-letters"></div>
+        </div>
+      </div>
 
 </div>
-<script src="assets/javascript/game.js"></script>  
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
+
